@@ -1,12 +1,12 @@
 # Front-end  
   
-1. 폴더 구성  
+__폴더 구성__
   
 client@0.1.0 /client            : Front-end  
 ├───/src                        : 메인 접속 화면  
 └───/───/components             : 요청 기능을 서버로 전달하는 컴퍼넌트 폴더  
   
-2. 기능 구성  
+__기능 구성__
   
 /client/.env  
 REACT_APP_MYADDRESS1            : 관리자 지갑 주소  
@@ -43,15 +43,15 @@ AddMunjin.jsx                   : 문진 정보 엑셀파일 서버로 전송.
   
 axios@0.26.1                    : Promise API 요청 및 서버 통신 패키지  
 http-proxy-middleware@2.0.6     : 프록시 설정 패키지  
-### WIN10 환경에서는 package.json에서의 선언 시 PATH 에러로 인해 설치한 패키지  
+__WIN10 환경에서는 package.json에서의 선언 시 PATH 에러로 인해 설치한 패키지__
 crypto-js@4.1.1                 : 특정 정보를 AES 암호화 시켜 server 전달  
 react-scripts@4.0.3             : 리액트 스크립트 실행 패키지  
-### react-scripts@5.0.0 에서 caver-js 오류로 전체 동작 불능.  
-### 리액트 스크립트 다운 그레이드 또는 webpack 버전 수동 업그레이드로 해결  
+__react-scripts@5.0.0 에서 caver-js 오류로 전체 동작 불능__
+__리액트 스크립트 다운 그레이드 또는 webpack 버전 수동 업그레이드로 해결__
 caver-js@1.8.1                  : 클레이튼 노드 통신 패키지  
-### 클라이언트에서는 caver.utils 내부 함수 사용  
+__클라이언트에서는 caver.utils 내부 함수 사용__
 ---------------------------------------------------------------------------------  
-### http-proxy-middleware 오류 정보 리포트  
+__http-proxy-middleware 오류 정보 리포트__
   
 WIN10에서는 유선 랜 사용 시 고정 IP에서는 프록시 사용 못하는 버그.  
 Invalid options object. Dev Server has been initialized using an options object that does not match the API schema  
