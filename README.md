@@ -1,19 +1,19 @@
 # Front-end 폴더 구성  
-
+  
 client@0.1.0 /client            : Front-end  
 ├───/src                        : 메인 접속 화면  
 └───/───/components             : 요청 기능을 서버로 전달하는 컴퍼넌트 폴더  
   
-/client/.env  
+client/.env  
 REACT_APP_MYADDRESS1            : 관리자 지갑 주소  
 REACT_APP_MYWALLET1PW           : 관리자 지갑 암호  
 REACT_APP_AES_SECRETKEY         : AES 암호화 키값. 복호화 시 필수  
   
-/client/src/setupProxy.js       : 클라이언트에서 서버 접속을 위해 프록시 설정  
+client/src/setupProxy.js        : 클라이언트에서 서버 접속을 위해 프록시 설정  
   
-/client/src/components/  
-Version.jsx                     : 클레이튼 노드 버전 받아오는 기능. # 제외.  
-GetLatestBlock.jsx              : 클레이튼 노드 최근 블럭 받아오는 기능. # 제외.  
+client/src/components 폴더  
+Version.jsx                     : 클레이튼 노드 버전 받아오는 기능. __제외__  
+GetLatestBlock.jsx              : 클레이튼 노드 최근 블럭 받아오는 기능. __제외__  
 Balance.jsx                     : address에 현재 계정 주소 입력. 확인 클릭.  
                                 : 해당 주소의 클레이 잔액을 받아 화면 출력.  
 CreateAccount.jsx               : 신규 계정 생성, 생성 계정을 현재 네트워크에 추가.  
@@ -43,13 +43,13 @@ init@0.0.0 /server              : Back-end
 ├───/routes                     : Front-end에서 axios로 전달 받아 클레이튼 서버와 통신  
 └───/uploads                    : 클레이튼 지갑 파일 저장 폴더  
   
-/server/.env  
-MYADDRESS                       : 관리자 지갑 주소  
-BAOBAB2                         : 현재 클레이튼 서버 주소와 포트  
-PORT                            : 현재 서버 포트  
+server/.env  
+MYADDRESS                        : 관리자 지갑 주소  
+BAOBAB2                          : 현재 클레이튼 서버 주소와 포트  
+PORT                             : 현재 서버 포트  
   
-/bin/www                        : 설정된 포트로 서버 오픈  
-/routes/index.js                : 클레이튼 서버에 API 전달. 통신 결과를 클라이언트에게 전달  
+bin/www                          : 설정된 포트로 서버 오픈  
+routes/index.js                  : 클레이튼 서버에 API 전달. 통신 결과를 클라이언트에게 전달  
 
 
 # 터미널 구동  
