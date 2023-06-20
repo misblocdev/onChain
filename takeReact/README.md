@@ -37,7 +37,7 @@ __현재 미구현__
 
 
 ---------------------------------------------------------------------------------------------
-Back-end 폴더 구성
+## Back-end 폴더 구성
 
 init@0.0.0 /server              : Back-end
 ├───/bin/                       : 메인 접속 화면
@@ -54,7 +54,7 @@ PORT                            : 현재 서버 포트
 /routes/index.js                : 클레이튼 서버에 API 전달. 통신 결과를 클라이언트에게 전달
 
 
-# 터미널 구동
+## 터미널 구동
 
 cd proxy-munjin
 proxy-munjin> cd client
@@ -66,8 +66,8 @@ proxy-munjin\server> `npm start`
 
 브라우저로 [http://localhost:3000] 접속
 
-# 브라우저 실행
+## 브라우저 실행
 클레이튼 지갑 암호와 지갑 정보 json 업로드 성공.
 해당 클레이튼 지갑에서 클레이튼 전송, 클레이튼 메모의 수수료 차감.
 
-# server에서 npm start 로 동시 실행 시키게 업데이트
+## server에서 npm start 로 동시 실행 시키게 업데이트
