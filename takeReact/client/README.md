@@ -9,30 +9,30 @@ client@0.1.0 /client            : Front-end
 __기능 구성__
   
 /client/.env  
-REACT_APP_MYADDRESS1            : 관리자 지갑 주소  
-REACT_APP_MYWALLET1PW           : 관리자 지갑 암호  
-REACT_APP_AES_SECRETKEY         : AES 암호화 키값. 복호화 시 필수  
+- REACT_APP_MYADDRESS1            : 관리자 지갑 주소  
+- REACT_APP_MYWALLET1PW           : 관리자 지갑 암호  
+- REACT_APP_AES_SECRETKEY         : AES 암호화 키값. 복호화 시 필수  
   
 /client/src/setupProxy.js       : 클라이언트에서 서버 접속을 위해 프록시 설정  
   
 /client/src/components/  
-Version.jsx                     : 클레이튼 노드 버전 받아오는 기능. # 제외.  
-GetLatestBlock.jsx              : 클레이튼 노드 최근 블럭 받아오는 기능. # 제외.  
-Balance.jsx                     : address에 현재 계정 주소 입력. 확인 클릭.  
+- Version.jsx                     : 클레이튼 노드 버전 받아오는 기능. # 제외.  
+- GetLatestBlock.jsx              : 클레이튼 노드 최근 블럭 받아오는 기능. # 제외.  
+- Balance.jsx                     : address에 현재 계정 주소 입력. 확인 클릭.  
                                 : 해당 주소의 클레이 잔액을 받아 화면 출력.  
-CreateAccount.jsx               : 신규 계정 생성, 생성 계정을 현재 네트워크에 추가.  
+- CreateAccount.jsx               : 신규 계정 생성, 생성 계정을 현재 네트워크에 추가.  
                                 : 화면에 계정과 개인키 출력.  
-AddAccountFromKeyStore.jsx      : 클레이튼 지갑 암호 입력. 파일 선택 클릭. `클레이튼 지갑키.json` 업로드.  
+- AddAccountFromKeyStore.jsx      : 클레이튼 지갑 암호 입력. 파일 선택 클릭. `클레이튼 지갑키.json` 업로드.  
                                 : 성공 시 지갑키 계정 주소와 생략된 개인키 출력.  
 **지갑 정보 입력 과정 성공. 등록 지갑에서 수수료가 지불되며 Transfer, TransferMemo 사용 가능.**
-Transfer.jsx                    : 보낼 금액, 화폐 단위, 보낼 주소, 본인 주소 입력. 전송 클릭.  
+- Transfer.jsx                    : 보낼 금액, 화폐 단위, 보낼 주소, 본인 주소 입력. 전송 클릭.  
                                 : 로그인 된 지갑에서 서명. 수수료 지불하며 전송.  
                                 : 트랜잭션 성공 시 로그인 된 지갑의 잔액 출력. 영수증 정보 중 트랜잭션 해시 화면 출력.  
-TransferMemo.jsx                : 보낼 금액, 화폐 단위, 보낼 주소, 본인 주소, 문진 정보 입력 후 암호 클릭. 전송 클릭.  
+- TransferMemo.jsx                : 보낼 금액, 화폐 단위, 보낼 주소, 본인 주소, 문진 정보 입력 후 암호 클릭. 전송 클릭.  
                                 : 로그인 된 지갑에서 서명. 수수료 지불하며 전송.  
                                 : 트랜잭션 성공 시 로그인 된 지갑의 잔액 출력. 영수증 정보 중 트랜잭션 해시. 암호화 된 문진 정보 화면 출력.  
                                 : 16toAEStoDecrypt 클릭 시 암호화 된 문진 정보를 복호화로 복구.  
-AddMunjin.jsx                   : 문진 정보 엑셀파일 서버로 전송.  
+- AddMunjin.jsx                   : 문진 정보 엑셀파일 서버로 전송.  
 현재 미구현  
                                 : 파일 선택 눌러 문진.xlsx 업로드.  
                                 : 업로드 완료. 마지막 줄 문진 정보 추출.  
@@ -41,17 +41,17 @@ AddMunjin.jsx                   : 문진 정보 엑셀파일 서버로 전송.
   
 # 패키지 일람  
   
-axios@0.26.1                    : Promise API 요청 및 서버 통신 패키지  
-http-proxy-middleware@2.0.6     : 프록시 설정 패키지  
-__WIN10 환경에서는 package.json에서의 선언 시 PATH 에러로 인해 설치한 패키지__
-crypto-js@4.1.1                 : 특정 정보를 AES 암호화 시켜 server 전달  
-react-scripts@4.0.3             : 리액트 스크립트 실행 패키지  
-__react-scripts@5.0.0 에서 caver-js 오류로 전체 동작 불능__
-__리액트 스크립트 다운 그레이드 또는 webpack 버전 수동 업그레이드로 해결__
-caver-js@1.8.1                  : 클레이튼 노드 통신 패키지  
-__클라이언트에서는 caver.utils 내부 함수 사용__
+- axios@0.26.1                    : Promise API 요청 및 서버 통신 패키지  
+- http-proxy-middleware@2.0.6     : 프록시 설정 패키지  
+- __WIN10 환경에서는 package.json에서의 선언 시 PATH 에러로 인해 설치한 패키지__
+- crypto-js@4.1.1                 : 특정 정보를 AES 암호화 시켜 server 전달  
+- react-scripts@4.0.3             : 리액트 스크립트 실행 패키지  
+- __react-scripts@5.0.0 에서 caver-js 오류로 전체 동작 불능__
+- __리액트 스크립트 다운 그레이드 또는 webpack 버전 수동 업그레이드로 해결__
+- caver-js@1.8.1                  : 클레이튼 노드 통신 패키지  
+- __클라이언트에서는 caver.utils 내부 함수 사용__
 ---------------------------------------------------------------------------------  
-__http-proxy-middleware 오류 정보 리포트__
+- __http-proxy-middleware 오류 정보 리포트__
   
 WIN10에서는 유선 랜 사용 시 고정 IP에서는 프록시 사용 못하는 버그.  
 Invalid options object. Dev Server has been initialized using an options object that does not match the API schema  
