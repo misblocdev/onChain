@@ -56,18 +56,17 @@ PORT                            : 현재 서버 포트
 
 ## 터미널 구동
 
-cd proxy-munjin
-proxy-munjin> cd client
-proxy-munjin\client> yarn
-cd ..
-proxy-munjin> cd server
-proxy-munjin\server> yarn
-proxy-munjin\server> `npm start`
-
-브라우저로 [http://localhost:3000] 접속
+- cd proxy-munjin
+- proxy-munjin> cd client
+- proxy-munjin\client> yarn
+- cd ..
+- proxy-munjin> cd server
+- proxy-munjin\server> yarn
+- proxy-munjin\server> `npm start`
+- 브라우저 [http://localhost:3000] 접속
 
 ## 브라우저 실행
-클레이튼 지갑 암호와 지갑 정보 json 업로드 성공.
-해당 클레이튼 지갑에서 클레이튼 전송, 클레이튼 메모의 수수료 차감.
+- 클레이튼 지갑 암호와 지갑 정보 json 업로드 성공.
+- 해당 클레이튼 지갑에서 클레이튼 전송, 클레이튼 메모의 수수료 차감.
 
-## server에서 npm start 로 동시 실행 시키게 업데이트
+## server에서 npm start 로 동시 실행 업데이트
