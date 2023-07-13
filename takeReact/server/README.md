@@ -1,7 +1,7 @@
-Back-end
+# Back-end
 
 
-폴더 구성
+- 폴더 구성
 
 init@0.0.0 /server              : Back-end
 ├───/bin/                       : 메인 접속 화면
@@ -10,7 +10,7 @@ init@0.0.0 /server              : Back-end
 └───/uploads                    : 클레이튼 지갑 파일 저장 폴더
 
 
-기능 구성
+- 기능 구성
 
 /server/.env
 MYADDRESS                       : 관리자 지갑 주소
