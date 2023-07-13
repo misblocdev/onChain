@@ -11,25 +11,21 @@ const TransferMemo = (props) => {
     const [amount, setAmount] = useState(0)
     const [unit, setUnit] = useState("KLAY")
     const [recipient, setRecipient] = useState(process.env.REACT_APP_MYADDRESS1)
-    const [address, setAddress] = useState(process.env.REACT_APP_MYADDRESS1)// test 계정
-    const [memo, setMemo] = useState(props.memo);// AES 문진 정보
+    const [address, setAddress] = useState(process.env.REACT_APP_MYADDRESS1)
+    const [memo, setMemo] = useState(props.memo);
     const [blockHash, setBlockHash] = useState("")
     const [transactionHash, setTransactionHash] = useState("")
     const [inputData, setInputData] = useState("")
 
-    // 업데이트 된 텍스트 적용 하여 수동 복호. 삭제 예정
     let onClickDecrypt = async () => {
-        let viewMemo = crypt(memo, false)// 복호
-        //console.log(viewMemo)
+        let viewMemo = crypt(memo, false)
         setMemo(viewMemo)
     }
     let onClickEncrypt = async () => {
-        let viewMemo = crypt(memo, true)// 암호
-        //console.log(viewMemo)
+        let viewMemo = crypt(memo, true)
         setMemo(viewMemo)
     }
 
-    // Hex 2 UTF8 2 AES. 삭제 예정
     let onClickAES = async () => {
         //let input = crypt(Web3.utils.hexToUtf8(inputData), false) // web3
         let input = crypt(inputData, false) // caver
