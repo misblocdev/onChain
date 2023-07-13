@@ -16,9 +16,9 @@ crypto-js
 - AES256 암/복호화. cryptojs 라이브러리와 다름.
   
 ## take 설치 및 실행
-cd onChain
-npm i
-npm start
+- cd onChain
+- npm i
+- npm start
 
 ## takeReact 구성
 
