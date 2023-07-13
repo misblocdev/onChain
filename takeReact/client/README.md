@@ -53,11 +53,11 @@ __기능 구성__
 ---------------------------------------------------------------------------------  
 - __http-proxy-middleware 오류 정보 리포트__
   
-WIN10에서는 유선 랜 사용 시 고정 IP에서는 프록시 사용 못하는 버그.  
-Invalid options object. Dev Server has been initialized using an options object that does not match the API schema  
-오류는 유선 랜 접속으로 '고정IP'일 경우 프록시 생성이 안된는 문제로 추정.  
-무선 접속 한다면 클라이언트의 리액트 패키지에서 프록시 설정 가능.  
-유선 접속한다면 http-proxy-middleware 패키지를 쓰고. 빈 포트를 찾아 띄워야 함.  
+- WIN10에서는 유선 랜 사용 시 고정 IP에서는 프록시 사용 못하는 버그.  
+- Invalid options object. Dev Server has been initialized using an options object that does not match the API schema  
+- 오류는 유선 랜 접속으로 '고정IP'일 경우 프록시 생성이 안된는 문제로 추정.  
+- 무선 접속 한다면 클라이언트의 리액트 패키지에서 프록시 설정 가능.  
+- 유선 접속한다면 http-proxy-middleware 패키지를 쓰고. 빈 포트를 찾아 띄워야 함.  
 ---------------------------------------------------------------------------------  
 # 변경된 사항  
 
