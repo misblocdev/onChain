@@ -11,6 +11,7 @@
   
 # 2. 실행 절차  
 *git clone https://github.com/misblocdev/onChain  
+*cd onChain  
 *cd take  
 *npm i  
 *npm start  
